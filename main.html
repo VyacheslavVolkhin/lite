@@ -10,27 +10,844 @@
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="./css/swipebox.min.css" />
     <link rel="stylesheet" href="./css/slick.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
 </head>
 
 <body>
     <!-- wrap -->
-    <div class="wrap">
+    <div class="wrap wrap-main">
 
 
         <!-- header -->
         <header class="header">
             <div class="inner-wrap">
-                44444
+                <div class="header-top-panel">
+                    <div class="menu-wrap js-popup-wrap">
+                        <a href="" class="btn-popup btn-action-ico ico-menu js-btn-toggle"><span></span></a>
+                        <div class="popup-content-block js-popup-block">
+                            <ul class="menu">
+                                <li><a href="">Поставщикам</a></li>
+                                <li><a href="">Оптовым покупателям</a></li>
+                                <li><a href="">Акции</a></li>
+                                <li><a href="">Оплата и доставка</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="soc-wrap">
+                        <a href="" class="btn-action-ico button-soc">
+                            <img src="./img/icons/soc01.svg" alt="">
+                        </a>
+                        <a href="" class="btn-action-ico button-soc">
+                            <img src="./img/icons/soc02.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="phones-wrap">
+                        <div class="phone-wrap">
+                            <a href="tel:89261595074" class="link-phone">+7 (926) 159-50-74</a>
+                        </div>
+                        <div class="phone-wrap">
+                            <a href="tel:89252613605" class="link-phone">+7 (925) 261-36-05</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-main-panel">
+                    <div class="logo-wrap">
+                        <a href="" class="logo">
+                            <img src="./img/main/logo.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="search-wrap">
+                        <form action="/" class="frm-main-search">
+                            <input type="text" class="form-input" placeholder="Поиск" required>
+                            <button type="reset" class="button-clear btn-action-ico ico-clear btn-clear"></button>
+                        </form>
+                        <!--search-results-box-->
+                        <div class="search-results-box">
+                            <div class="search-title-wrap">
+                                <div class="search-title">Найдено 15</div>
+                                <div class="search-action"><a href="" class="btn-action-more">Смотреть все</a></div>
+                            </div>
+                            <div class="search-content-outer-wrap">
+                                <div class="search-menu-wrap">
+                                    <div class="search-menu-title">Возможно вам подойдет</div>
+                                    <div class="search-menu-inner">
+                                        <ul class="menu">
+                                            <li><a href="">Iphone 13 pro</a></li>
+                                            <li><a href="">Iphone 13 pro</a></li>
+                                            <li><a href="">Iphone 13 pro</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="search-menu-action">
+                                        <a href="" class="btn">Смотреть все результаты</a>
+                                    </div>
+                                </div>
+                                <div class="search-catalog-wrap">
+                                    <div class="items-wrap">
+                                        <!--item wrap-->
+                                        <div class="item-wrap">
+                                            <div class="item-tile-catalog">
+                                                <div class="tile-photo-wrap">
+                                                    <a href="" class="tile-photo photo-contain">
+                                                        <img src="./img/cat01.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title"><a href="">Iphone 13 pro max</a></div>
+                                                    <div class="tile-info">Голубой, 256 gb</div>
+                                                    <div class="tile-price">130 000 ₽</div>
+                                                </div>
+                                                <div class="tile-actions-wrap">
+                                                    <div class="tile-action">
+                                                        <a href="" class="btn-action-ico ico-fav js-btn-tgl"></a>
+                                                    </div>
+                                                    <div class="tile-action">
+                                                        <a href="" class="btn button-second button-border">В корзину</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="item-wrap">
+                                            <div class="item-tile-catalog">
+                                                <div class="tile-photo-wrap">
+                                                    <a href="" class="tile-photo photo-contain">
+                                                        <img src="./img/cat02.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title"><a href="">Iphone 13 pro max</a></div>
+                                                    <div class="tile-info">Голубой, 256 gb</div>
+                                                    <div class="tile-price">130 000 ₽</div>
+                                                </div>
+                                                <div class="tile-actions-wrap">
+                                                    <div class="tile-action">
+                                                        <a href="" class="btn-action-ico ico-fav js-btn-tgl"></a>
+                                                    </div>
+                                                    <div class="tile-action">
+                                                        <a href="" class="btn button-second button-border">В корзину</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="item-wrap">
+                                            <div class="item-tile-catalog">
+                                                <div class="tile-photo-wrap">
+                                                    <a href="" class="tile-photo photo-contain">
+                                                        <img src="./img/cat03.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title"><a href="">Iphone 13 pro max</a></div>
+                                                    <div class="tile-info">Голубой, 256 gb</div>
+                                                    <div class="tile-price">130 000 ₽</div>
+                                                </div>
+                                                <div class="tile-actions-wrap">
+                                                    <div class="tile-action">
+                                                        <a href="" class="btn-action-ico ico-fav js-btn-tgl"></a>
+                                                    </div>
+                                                    <div class="tile-action">
+                                                        <a href="" class="btn button-second button-border">В корзину</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="item-wrap">
+                                            <div class="item-tile-catalog">
+                                                <div class="tile-photo-wrap">
+                                                    <a href="" class="tile-photo photo-contain">
+                                                        <img src="./img/cat04.jpg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="tile-info-wrap">
+                                                    <div class="tile-title"><a href="">Iphone 13 pro max</a></div>
+                                                    <div class="tile-info">Голубой, 256 gb</div>
+                                                    <div class="tile-price">130 000 ₽</div>
+                                                </div>
+                                                <div class="tile-actions-wrap">
+                                                    <div class="tile-action">
+                                                        <a href="" class="btn-action-ico ico-fav js-btn-tgl"></a>
+                                                    </div>
+                                                    <div class="tile-action">
+                                                        <a href="" class="btn button-second button-border">В корзину</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!--/item wrap-->
+                                    </div>
+                                </div>
+                                <div class="search-items-wrap">
+                                    <div class="items-wrap">
+                                        <!--item wrap-->
+                                        <div class="item-wrap">
+                                            <a href="" class="item-tile-search">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo">
+                                                        <img src="./img/search.jpg" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-title">Apple Iphone 13 pro max </span>
+                                                    <span class="tile-info">Артикул: 111111</span>
+                                                    <span class="tile-price-wrap">
+                                                        <span class="tile-price">130 000 ₽</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="item-wrap">
+                                            <a href="" class="item-tile-search">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo">
+                                                        <img src="./img/search.jpg" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-title">Apple Iphone 13 pro max </span>
+                                                    <span class="tile-info">Артикул: 111111</span>
+                                                    <span class="tile-price-wrap">
+                                                        <span class="tile-price">130 000 ₽</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="item-wrap">
+                                            <a href="" class="item-tile-search">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo">
+                                                        <img src="./img/search.jpg" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-title">Apple Iphone 13 pro max </span>
+                                                    <span class="tile-info">Артикул: 111111</span>
+                                                    <span class="tile-price-wrap">
+                                                        <span class="tile-price">130 000 ₽</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="item-wrap">
+                                            <a href="" class="item-tile-search">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo">
+                                                        <img src="./img/search.jpg" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-title">Apple Iphone 13 pro max </span>
+                                                    <span class="tile-info">Артикул: 111111</span>
+                                                    <span class="tile-price-wrap">
+                                                        <span class="tile-price">130 000 ₽</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="item-wrap">
+                                            <a href="" class="item-tile-search">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo">
+                                                        <img src="./img/search.jpg" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-title">Apple Iphone 13 pro max </span>
+                                                    <span class="tile-info">Артикул: 111111</span>
+                                                    <span class="tile-price-wrap">
+                                                        <span class="tile-price">130 000 ₽</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="item-wrap">
+                                            <a href="" class="item-tile-search">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo">
+                                                        <img src="./img/search.jpg" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-title">Apple Iphone 13 pro max </span>
+                                                    <span class="tile-info">Артикул: 111111</span>
+                                                    <span class="tile-price-wrap">
+                                                        <span class="tile-price">130 000 ₽</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="item-wrap">
+                                            <a href="" class="item-tile-search">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo">
+                                                        <img src="./img/search.jpg" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-title">Apple Iphone 13 pro max </span>
+                                                    <span class="tile-info">Артикул: 111111</span>
+                                                    <span class="tile-price-wrap">
+                                                        <span class="tile-price">130 000 ₽</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="item-wrap">
+                                            <a href="" class="item-tile-search">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo">
+                                                        <img src="./img/search.jpg" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-title">Apple Iphone 13 pro max </span>
+                                                    <span class="tile-info">Артикул: 111111</span>
+                                                    <span class="tile-price-wrap">
+                                                        <span class="tile-price">130 000 ₽</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="item-wrap">
+                                            <a href="" class="item-tile-search">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo">
+                                                        <img src="./img/search.jpg" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-title">Apple Iphone 13 pro max </span>
+                                                    <span class="tile-info">Артикул: 111111</span>
+                                                    <span class="tile-price-wrap">
+                                                        <span class="tile-price">130 000 ₽</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                        <!--item wrap-->
+                                        <div class="item-wrap">
+                                            <a href="" class="item-tile-search">
+                                                <span class="tile-photo-wrap">
+                                                    <span class="tile-photo">
+                                                        <img src="./img/search.jpg" alt="">
+                                                    </span>
+                                                </span>
+                                                <span class="tile-info-wrap">
+                                                    <span class="tile-title">Apple Iphone 13 pro max </span>
+                                                    <span class="tile-info">Артикул: 111111</span>
+                                                    <span class="tile-price-wrap">
+                                                        <span class="tile-price">130 000 ₽</span>
+                                                    </span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                        <!--/item wrap-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-footer-wrap">
+                                <a href="" class="btn">На главную</a>
+                            </div>
+                        </div>
+                        <!--/search-results-box-->
+                    </div>
+                    <div class="actions-wrap">
+                        <div class="action-wrap">
+                            <a href="" class="btn-header" data-counter="1">
+                                <span class="btn-action-ico button-header">
+                                    <img src="./img/icons/header-fav.svg" alt="">
+                                </span>
+                                <span class="button-title">Избранное</span>
+                            </a>
+                        </div>
+                        <div class="action-wrap">
+                            <a href="" class="btn-header js-popup-open" data-counter="1" data-popup="popup-add-cart">
+                                <span class="btn-action-ico button-header">
+                                    <img src="./img/icons/header-cart.svg" alt="">
+                                </span>
+                                <span class="button-title">Корзина</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-nav-panel js-popup-wrap">
+                <a href="" class="btn-popup btn-action-ico ico-menu js-btn-toggle"><span></span></a>
+                <div class="popup-content-block js-popup-block">
+                    <ul class="menu">
+                        <li><a href="">Ноутбуки</a></li>
+                        <li><a href="">Смартфоны</a></li>
+                        <li><a href="">Аксессуары</a></li>
+                        <li><a href="">Часы</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
         <!-- /header -->
 
+        <!--header-fixed-panel-->
+        <div class="header-fixed-panel">
+            <div class="actions-inner-wrap">
+                <div class="action-wrap">
+                    <a href="" class="btn-header">
+                        <span class="button-ico">
+                            <img src="./img/icons/menu-home.svg" alt="">
+                        </span>
+                        <span class="button-title">Главная</span>
+                    </a>
+                </div>
+                <div class="action-wrap">
+                    <a href="" class="btn-header">
+                        <span class="button-ico">
+                            <img src="./img/icons/menu-catalog.svg" alt="">
+                        </span>
+                        <span class="button-title">Каталог</span>
+                    </a>
+                </div>
+                <div class="action-wrap">
+                    <a href="" class="btn-header" data-counter="1">
+                        <span class="button-ico">
+                            <img src="./img/icons/menu-fav.svg" alt="">
+                        </span>
+                        <span class="button-title">Избранное</span>
+                    </a>
+                </div>
+                <div class="action-wrap">
+                    <a href="" class="btn-header js-popup-open" data-counter="1" data-popup="popup-add-cart">
+                        <span class="button-ico">
+                            <img src="./img/icons/menu-cart.svg" alt="">
+                        </span>
+                        <span class="button-title">Корзина</span>
+                    </a>
+                </div>
+            </div>
+        </div><!--/header-fixed-panel-->
+        <div class="popup-outer-box popup-header" id="popup-add-cart">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <a href="" class="item-tile-header-cart">
+                            <span class="tile-photo-wrap">
+                                <span class="tile-photo">
+                                    <img src="./img/header-cart.jpg" alt="">
+                                </span>
+                            </span>
+                            <span class="tile-info-wrap">
+                                <span class="tile-title">Iphone 14 pro max</span>
+                                <span class="tile-info">добавлен в корзину!</span>
+                            </span>
+                        </a>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+                <div class="items-action-wrap">
+                    <a href="" class="btn">Перейти</a>
+                </div>
+            </div>
+        </div>
+
+        <!--main-slider-box-->
+        <div class="main-slider-box cnt-section">
+            <div class="slider-wrap">
+                <div class="slider">
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <img src="./img/slider.jpg" alt="" class="img-bg-cover">
+                        <div class="inner-wrap">
+                            <div class="title-inner-wrap">
+                                <div class="h1-title">Macbook pro</div>
+                                <p>Просто какой то ноутбук и чето там еще</p>
+                                <div class="sl-price">Цена: 123 455 ₽</div>
+                            </div>
+                            <div class="action-inner-wrap">
+                                <a href="" class="btn button-light">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <img src="./img/slider.jpg" alt="" class="img-bg-cover">
+                        <div class="inner-wrap">
+                            <div class="title-inner-wrap">
+                                <div class="h1-title">Macbook pro</div>
+                                <p>Просто какой то ноутбук и чето там&nbsp;еще</p>
+                                <div class="sl-price">Цена: 123 455 ₽</div>
+                            </div>
+                            <div class="action-inner-wrap">
+                                <a href="" class="btn button-light">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <img src="./img/slider.jpg" alt="" class="img-bg-cover">
+                        <div class="inner-wrap">
+                            <div class="title-inner-wrap">
+                                <div class="h1-title">Macbook pro</div>
+                                <p>Просто какой то ноутбук и чето там&nbsp;еще</p>
+                                <div class="sl-price">Цена: 123 455 ₽</div>
+                            </div>
+                            <div class="action-inner-wrap">
+                                <a href="" class="btn button-light">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/sl-wrap-->
+                    <!--sl-wrap-->
+                    <div class="sl-wrap">
+                        <img src="./img/slider.jpg" alt="" class="img-bg-cover">
+                        <div class="inner-wrap">
+                            <div class="title-inner-wrap">
+                                <div class="h1-title">Macbook pro</div>
+                                <p>Просто какой то ноутбук и чето там еще</p>
+                                <div class="sl-price">Цена: 123 455 ₽</div>
+                            </div>
+                            <div class="action-inner-wrap">
+                                <a href="" class="btn button-light">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/sl-wrap-->
+                </div>
+            </div>
+        </div>
+        <!--/main-slider-box-->
+
         <!-- page -->
-        <div class="page">
-            2222
+        <div class="page-full">
+
+            <!--categories-box-->
+            <div class="categories-box">
+                <h2 class="h1-title">Каталог</h2>
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <a href="" class="item-tile-category">
+                            <picture class="tile-photo">
+                                <source srcset="./img/cat01-d.png" media="(min-width: 768px)">
+                                <source srcset="./img/cat01-m.png" media="(max-width: 767px)">
+                                <img src="./img/cat01-m.png" alt="" />
+                            </picture>
+                            <span class="tile-title">Смартфоны</span>
+                        </a>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <a href="" class="item-tile-category">
+                            <picture class="tile-photo">
+                                <source srcset="./img/cat02-d.png" media="(min-width: 768px)">
+                                <source srcset="./img/cat02-m.png" media="(max-width: 767px)">
+                                <img src="./img/cat02-m.png" alt="" />
+                            </picture>
+                            <span class="tile-title">Ноутбуки</span>
+                        </a>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <a href="" class="item-tile-category">
+                            <picture class="tile-photo">
+                                <source srcset="./img/cat03-d.png" media="(min-width: 768px)">
+                                <source srcset="./img/cat03-m.png" media="(max-width: 767px)">
+                                <img src="./img/cat03-m.png" alt="" />
+                            </picture>
+                            <span class="tile-title">Часы</span>
+                        </a>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <a href="" class="item-tile-category">
+                            <picture class="tile-photo">
+                                <source srcset="./img/cat04-d.png" media="(min-width: 768px)">
+                                <source srcset="./img/cat04-m.png" media="(max-width: 767px)">
+                                <img src="./img/cat04-m.png" alt="" />
+                            </picture>
+                            <span class="tile-title">Аксессуары</span>
+                        </a>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+            <!--/categories-box-->
+
+            <!--catalog-box-->
+            <div class="catalog-box section-main section-one-row">
+                <h2 class="h1-title">популярные товары</h2>
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-catalog">
+                            <div class="tile-photo-wrap">
+                                <a href="" class="tile-photo photo-contain">
+                                    <img src="./img/cat01.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-title"><a href="">Iphone 13 pro max</a></div>
+                                <div class="tile-info">Голубой, 256 gb</div>
+                                <div class="tile-price">130 000 ₽</div>
+                            </div>
+                            <div class="tile-actions-wrap">
+                                <div class="tile-action">
+                                    <a href="" class="btn-action-ico ico-fav js-btn-tgl"></a>
+                                </div>
+                                <div class="tile-action">
+                                    <a href="" class="btn button-second button-border">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-catalog">
+                            <div class="tile-photo-wrap">
+                                <a href="" class="tile-photo photo-contain">
+                                    <img src="./img/cat02.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-title"><a href="">Iphone 13 pro max</a></div>
+                                <div class="tile-info">Голубой, 256 gb</div>
+                                <div class="tile-price">130 000 ₽</div>
+                            </div>
+                            <div class="tile-actions-wrap">
+                                <div class="tile-action">
+                                    <a href="" class="btn-action-ico ico-fav js-btn-tgl"></a>
+                                </div>
+                                <div class="tile-action">
+                                    <a href="" class="btn button-second button-border">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-catalog">
+                            <div class="tile-photo-wrap">
+                                <a href="" class="tile-photo photo-contain">
+                                    <img src="./img/cat03.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-title"><a href="">Iphone 13 pro max</a></div>
+                                <div class="tile-info">Голубой, 256 gb</div>
+                                <div class="tile-price">130 000 ₽</div>
+                            </div>
+                            <div class="tile-actions-wrap">
+                                <div class="tile-action">
+                                    <a href="" class="btn-action-ico ico-fav js-btn-tgl"></a>
+                                </div>
+                                <div class="tile-action">
+                                    <a href="" class="btn button-second button-border">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-catalog">
+                            <div class="tile-photo-wrap">
+                                <a href="" class="tile-photo photo-contain">
+                                    <img src="./img/cat04.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-title"><a href="">Iphone 13 pro max</a></div>
+                                <div class="tile-info">Голубой, 256 gb</div>
+                                <div class="tile-price">130 000 ₽</div>
+                            </div>
+                            <div class="tile-actions-wrap">
+                                <div class="tile-action">
+                                    <a href="" class="btn-action-ico ico-fav js-btn-tgl"></a>
+                                </div>
+                                <div class="tile-action">
+                                    <a href="" class="btn button-second button-border">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-catalog">
+                            <div class="tile-photo-wrap">
+                                <a href="" class="tile-photo photo-contain">
+                                    <img src="./img/cat01.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-title"><a href="">Iphone 13 pro max</a></div>
+                                <div class="tile-info">Голубой, 256 gb</div>
+                                <div class="tile-price">130 000 ₽</div>
+                            </div>
+                            <div class="tile-actions-wrap">
+                                <div class="tile-action">
+                                    <a href="" class="btn-action-ico ico-fav js-btn-tgl"></a>
+                                </div>
+                                <div class="tile-action">
+                                    <a href="" class="btn button-second button-border">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-catalog">
+                            <div class="tile-photo-wrap">
+                                <a href="" class="tile-photo photo-contain">
+                                    <img src="./img/cat01.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <div class="tile-title"><a href="">Iphone 13 pro max</a></div>
+                                <div class="tile-info">Голубой, 256 gb</div>
+                                <div class="tile-price">130 000 ₽</div>
+                            </div>
+                            <div class="tile-actions-wrap">
+                                <div class="tile-action">
+                                    <a href="" class="btn-action-ico ico-fav js-btn-tgl"></a>
+                                </div>
+                                <div class="tile-action">
+                                    <a href="" class="btn button-second button-border">В корзину</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+            <!--/catalog-box-->
+
+            <!--pluses-box-->
+            <div class="pluses-box">
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-plus">
+                            <div class="tile-ico">
+                                <img src="./img/icons/plus01.svg" alt="">
+                            </div>
+                            <div class="tile-title">Быстрая доставка</div>
+                            <p>Мы сотрудничаем с курьерскими службами для быстрой и качественной доставки</p>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-plus">
+                            <div class="tile-ico">
+                                <img src="./img/icons/plus02.svg" alt="">
+                            </div>
+                            <div class="tile-title">Низкие цены</div>
+                            <p>Мы работаем с поставщиками напрямую, что дает нам возможность установить минимальные цены на всю продукцию</p>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-plus">
+                            <div class="tile-ico">
+                                <img src="./img/icons/plus03.svg" alt="">
+                            </div>
+                            <div class="tile-title">Надежность</div>
+                            <p>Мы имеем богатый опыт работы в своей сфере. Нам доверяют сотни розничных и десятки оптовых клиентов.</p>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+            <!--/pluses-box-->
+
+            <!--faq-box-->
+            <div class="faq-box">
+                <h2 class="h1-title">актуальные вопросы</h2>
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-faq js-popup-wrap no-close">
+                            <div class="tile-title js-btn-toggle">Что необходимо для получения гарантийного ремонта?</div>
+                            <div class="tile-content-block js-popup-block">
+                                <p>Вам необходимо в кратчайшие сроки сообщить о факте поломки в техническую поддержку. В обращении также необходимо указать дату покупки и приложить фотографии самого товара.</p>
+                            </div>
+                        </div>
+                        <div class="item-tile-faq js-popup-wrap no-close">
+                            <div class="tile-title js-btn-toggle">В каких случаях гарантия перестает действовать?</div>
+                            <div class="tile-content-block js-popup-block">
+                                <p>В гарантийном ремонте может быть отказано в случае, если он поврежден не по вине производителя. К ним относятся:</p>
+                                <ul>
+                                    <li>· Повреждение механическим воздействием, попаданием жидкости и т.п.</li>
+                                    <li>· Неправильная эксплуатация (нарушение условий, прописанных в инструкции)</li>
+                                    <li>· Следы взлома файловой системы или стороннего ПО</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="item-tile-faq js-popup-wrap no-close">
+                            <div class="tile-title js-btn-toggle">Осуществляется ли доставка за пределы МКАД?</div>
+                            <div class="tile-content-block js-popup-block">
+                                <p>Да. Цена и сроки доставки зависит от конкретного адреса, поэтому уточняйте у менеджеров.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-faq js-popup-wrap no-close">
+                            <div class="tile-title js-btn-toggle">Могу ли открыть и проверить товар перед оплатой?</div>
+                            <div class="tile-content-block js-popup-block">
+                                <p>Да. Наши клиенты всегда могут полностью проверить товар перед приобретением.</p>
+                            </div>
+                        </div>
+                        <div class="item-tile-faq js-popup-wrap no-close">
+                            <div class="tile-title js-btn-toggle">Какие есть способы оплаты?</div>
+                            <div class="tile-content-block js-popup-block">
+                                <p>Среди доступных способов оплаты: перевод на карту или наличный расчет.</p>
+                            </div>
+                        </div>
+                        <div class="item-tile-faq js-popup-wrap no-close">
+                            <div class="tile-title js-btn-toggle">Предоставляете ли Вы чек?</div>
+                            <div class="tile-content-block js-popup-block">
+                                <p>Да. После покупки мы предоставляем клиенту чек с печатью.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+            <!--/faq-box-->
+
         </div>
         <!-- /page -->
 
@@ -38,7 +855,68 @@
         <!-- footer -->
         <footer class="footer">
             <div class="inner-wrap">
-                333333
+                <div class="logo-wrap">
+                    <a href="" class="logo">
+                        <img src="./img/main/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu-wrap">
+                    <ul class="menu">
+                        <li>
+                            <a href="" class="btn-menu">категории</a>
+                            <ul>
+                                <li><a href="">Ноутбуки</a></li>
+                                <li><a href="">Часы</a></li>
+                                <li><a href="">Смартфоны</a></li>
+                                <li><a href="">Аксессуары</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="" class="btn-menu">покупателям</a>
+                            <ul>
+                                <li><a href="">Часто задаваемые вопросы</a></li>
+                                <li><a href="">Оптовым покупателям</a></li>
+                                <li><a href="">Поставщикам</a></li>
+                                <li><a href="">Доставка и оплата</a></li>
+                                <li><a href="">Акции</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="contacts-wrap">
+                    <div class="phone-number">
+                        <a href="tel:89252613605" class="link-phone">+7 (925) 261-36-05</a>
+                    </div>
+                    <div class="phone-info-wrap">Время работы с 9:00 до 19:00</div>
+                    <div class="callback-wrap">
+                        <a href="" class="link-main js-popup-open" data-popup="popup-callback">Заказать звонок</a>
+                    </div>
+                    <div class="email-wrap">
+                        <a href="mailto:lair17a@yandex.ru" class="link-email">lair17a@yandex.ru</a>
+                    </div>
+                    <p><b>Офис-склад</b></p>
+                    <p>Багратионовский проезд 7к3, БЦ Галерея</p>
+                </div>
+                <div class="info-wrap">
+                    <p>Сайт носит сугубо информационный характер и не является публичной офертой, определяемой Статьей 437 (2) ГК РФ</p>
+                </div>
+                <div class="actions-wrap">
+                    <a href="" class="btn-action-ico button-soc">
+                        <img src="./img/icons/soc001.svg" alt="">
+                    </a>
+                    <a href="" class="btn-action-ico button-soc">
+                        <img src="./img/icons/soc002.svg" alt="">
+                    </a>
+                    <a href="" class="btn-action-ico button-soc">
+                        <img src="./img/icons/soc003.svg" alt="">
+                    </a>
+                    <a href="" class="btn-action-ico button-soc">
+                        <img src="./img/icons/soc004.svg" alt="">
+                    </a>
+                </div>
+                <div class="bottom-info-wrap">
+                    <p><a href=""><b>Политика конфиденциальности</b></a></p>
+                </div>
             </div>
         </footer>
         <!-- /footer -->
@@ -47,8 +925,8 @@
     <!-- /wrap -->
 
     <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.fancybox.min.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/jquery.swipebox.min.js"></script>
     <script src="./js/jquery.maskedinput.min.js"></script>
     <script src="./js/scripts.js"></script>
 
