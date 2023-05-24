@@ -4854,6 +4854,7 @@ select.form-input:required:invalid {
 }
 .frm-select-item input:checked ~ label {
   background-color: #F7F7F7;
+  font-weight: bold;
 }
 .frm-select-item input:checked ~ label:before {
   opacity: 1;
