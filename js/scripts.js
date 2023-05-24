@@ -22,6 +22,7 @@ $(document).ready(function(){
     
     
     
+    
     //form
     $('.field-button-clear').on('click', function() {
         $(this).parent().find('.form-input').val('');
@@ -192,6 +193,11 @@ $(document).ready(function(){
     
     
     //filter box
+    $(".inp-number").keypress(function(event){
+        event = event || window.event;
+        if (event.charCode && event.charCode!=0 && event.charCode!=46 && (event.charCode < 48 || event.charCode > 57) )
+            return false;
+    });
     $('.filter-box .button-filter-more').on('click', function() {
         $(this).parents('.filter-section-wrap').toggleClass('filter-section-all');
         return false;
