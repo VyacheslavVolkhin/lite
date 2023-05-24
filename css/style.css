@@ -2910,7 +2910,7 @@ body {
   cursor: pointer;
 }
 .filter-box .filter-section-title.active:before {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 .filter-box .filter-section-title:before,
 .filter-box .filter-section-title:after {
