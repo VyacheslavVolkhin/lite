@@ -825,6 +825,9 @@ body {
   }
 }
 @media (max-width: 1023px) {
+  .menu-show {
+    overflow: hidden;
+  }
   .search-results-box {
     position: fixed;
     top: 150px;
@@ -958,8 +961,103 @@ body {
     height: 40px;
     margin: -20px -20px 0 0;
   }
+  .header-top-panel .menu-wrap .js-btn-toggle.active + .js-popup-block {
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
   .header-top-panel .menu-wrap .popup-content-block {
     display: none;
+    padding: 52px 0 52px 0;
+    background: var(--clr-base);
+    color: #fff;
+    position: fixed;
+    top: 0;
+    bottom: 86px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .header-top-panel .menu-wrap .popup-content-block::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  .header-top-panel .menu-wrap .info-wrap {
+    padding-top: 40px;
+    padding-left: var(--paddingContainer);
+    padding-right: var(--paddingContainer);
+    -ms-flex: 1;
+        flex: 1;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: end;
+        justify-content: flex-end;
+  }
+  .header-top-panel .menu-wrap .contacts-wrap {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+  }
+  .header-top-panel .menu-wrap .cnt-wrap {
+    margin-bottom: 20px;
+  }
+  .header-top-panel .menu-wrap .soc-wrap {
+    padding-top: 20px;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header-top-panel .menu-wrap .soc-wrap .btn-action-ico.button-soc:not(:hover) {
+    background-color: #fff;
+  }
+  .header-top-panel .menu-wrap .menu {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    position: relative;
+  }
+  .header-top-panel .menu-wrap .menu:before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: var(--paddingContainer);
+    right: var(--paddingContainer);
+    height: 1px;
+    background-color: #fff;
+  }
+  .header-top-panel .menu-wrap .menu a {
+    display: block;
+    padding: 10px var(--paddingContainer);
+  }
+  .header-top-panel .menu-wrap .btn-popup-close {
+    display: block;
+    position: fixed;
+    z-index: 20;
+    top: 60px;
+    right: 20px;
+  }
+  .header-top-panel .menu-wrap .btn-action-ico.ico-close:before,
+  .header-top-panel .menu-wrap .btn-action-ico.ico-close:after {
+    background-color: #fff;
+    width: 20px;
+    margin-left: -10px;
+  }
+  .header-top-panel .menu-wrap a:not(.btn) {
+    color: inherit;
+  }
+  .header-top-panel .menu-wrap a:not(.btn):hover {
+    color: var(--clr-att);
   }
   .header-top-panel .menu-wrap .btn-popup {
     display: block;
@@ -2530,6 +2628,9 @@ body {
 .faq-box {
   margin-bottom: 68px;
 }
+.faq-box:last-child {
+  margin-bottom: 0;
+}
 .faq-box .items-wrap {
   margin: 0 -10px;
 }
@@ -3704,9 +3805,6 @@ body.popup-open {
     height: 110px;
     width: 100%;
   }
-  .faq-box {
-    margin-bottom: 8rem;
-  }
   .faq-box .h1-title {
     margin-bottom: 1em;
   }
@@ -3994,7 +4092,7 @@ body.popup-open {
   border: 1px solid #E7E7E7;
   border-radius: 10px;
   padding: 0 10px 0 23px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 17px;
   font-weight: 600;
   color: var(--clr-base);
@@ -4023,7 +4121,6 @@ select.form-input {
   display: block;
   width: 100%;
   padding-right: 30px;
-  background-image: url(../img/icons/arrow-select.svg);
   background-position: right 20px center;
   background-color: #fff;
   background-repeat: no-repeat;
@@ -4050,7 +4147,6 @@ select.form-input.form-input-clear {
   padding: 0 16px 0 0;
   color: inherit;
   font-weight: bold;
-  background-image: url(../img/icons/arrow-select.png);
   background-size: 8px auto;
   background-repeat: no-repeat;
   background-position: right center;
@@ -4534,7 +4630,7 @@ select.form-input:required:invalid {
   text-align: center;
   box-shadow: none;
   background-color: transparent;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   color: var(--clr-base);
   border-radius: 0;
@@ -4811,7 +4907,7 @@ select.form-input:required:invalid {
   border-radius: 10px;
   border: 1px solid #E7E7E7;
   box-shadow: none;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 17px;
   color: #171717;
   font-weight: 400;
@@ -4860,7 +4956,7 @@ select.form-input:required:invalid {
   padding: 0 10px 0 46px;
   background: #F7F7F7;
   border: 1px solid #E7E7E7;
-  font-size: 14px;
+  font-size: 16px;
   color: var(--clr-base);
 }
 .frm-select-range .field-range {
