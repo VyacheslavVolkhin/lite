@@ -606,6 +606,11 @@
         }
     }
     .item-tile-category {
+        &:hover {
+            .tile-photo {
+                transform: scale(1.1);
+            }
+        }
         .tile-title {
             margin-top: 20px;
             font-size: 20px;
@@ -614,6 +619,8 @@
         .tile-photo {
             border-radius: 10px;
             border: 1px solid #E7E7E7;
+            transition: all ease 0.4s;
+            transform-origin: 50% 100%;
         }
     }
     .item-tile-catalog {

@@ -2009,6 +2009,9 @@ body {
     height: 80px;
     margin-bottom: 20px;
   }
+  .item-tile-category:hover .tile-photo {
+    transform: scale(1.1);
+  }
   .item-tile-category .tile-title {
     margin-top: 20px;
     font-size: 20px;
@@ -2017,6 +2020,8 @@ body {
   .item-tile-category .tile-photo {
     border-radius: 10px;
     border: 1px solid #E7E7E7;
+    transition: all ease 0.4s;
+    transform-origin: 50% 100%;
   }
   .item-tile-catalog .tile-action {
     width: 52px;
